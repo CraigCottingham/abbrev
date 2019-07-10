@@ -31,8 +31,8 @@ be found at [https://hexdocs.pm/abbrev](https://hexdocs.pm/abbrev).
   2. Install dependencies with `mix deps.get`.
 
 Pull requests are welcome. Pull requests with specs covering the changes
-are especially welcome. Pull requests with specs and which have been run through
-`mix format` are extra-especially welcome. :smile:
+are especially welcome. Pull requests with specs, which have been run through
+`mix format`, and pass `mix credo` are extra-especially welcome. :smile:
 
 Unit tests were written with [ESpec](https://github.com/antonmi/espec).
 
