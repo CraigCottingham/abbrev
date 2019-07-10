@@ -2,6 +2,9 @@
 
 > Calculates the set of unambiguous abbreviations for a given set of strings.
 
+[![CircleCI](https://img.shields.io/circleci/project/github/CraigCottingham/abbrev.svg?style=flat)](https://circleci.com/gh/CraigCottingham/abbrev)
+[![Github open issues](https://img.shields.io/github/issues/CraigCottingham/abbrev.svg?style=flat)](https://github.com/CraigCottingham/abbrev/issues)
+[![Github open PRs](https://img.shields.io/github/issues-pr/CraigCottingham/abbrev.svg?style=flat)](https://github.com/CraigCottingham/abbrev/pulls)
 [![License](https://img.shields.io/github/license/CraigCottingham/abbrev.svg?style=flat-square)](https://github.com/CraigCottingham/abbrev/blob/master/LICENSE)
 
 ## Installation
