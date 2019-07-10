@@ -1,6 +1,6 @@
 # Abbrev
 
-Generate all unique prefixes for a list of words.
+Calculates the set of unambiguous abbreviations for a given set of strings.
 
 ## Installation
 

@@ -1,6 +1,6 @@
 defmodule Abbrev do
   @moduledoc """
-  Documentation for Abbrev.
+  Calculates the set of unambiguous abbreviations for a given set of strings.
   """
 
   @doc """
