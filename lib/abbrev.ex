@@ -29,17 +29,7 @@ defmodule Abbrev do
   @spec abbrev([binary()]) :: %{required(binary()) => binary()}
   def abbrev(words) do
     Enum.reduce(words, %{abbreviations: %{}, seen: %{}}, fn word, state ->
-      Enum.reduce(all_prefixes_for_word(word, [word]), state, fn prefix, state ->
-        case get_and_update_in(state[:seen][prefix], &{&1, (&1 || 0) + 1}) do
-          {nil, state} ->
-            put_in(state[:abbreviations][prefix], word)
-          {1, state} ->
-            {_, new_state} = pop_in(state[:abbreviations][prefix])
-            new_state
-          {_, state} ->
-            state
-        end
-      end)
+      Enum.reduce(all_prefixes_for_word(word, [word]), state, fn prefix, state -> update_state(word, prefix, state) end)
     end)[:abbreviations]
   end
 
@@ -90,6 +80,18 @@ defmodule Abbrev do
         all_prefixes_for_word(prefix, [prefix | accum])
       nil ->
         accum
+    end
+  end
+
+  defp update_state(word, prefix, state) do
+    case get_and_update_in(state[:seen][prefix], &{&1, (&1 || 0) + 1}) do
+      {nil, state} ->
+        put_in(state[:abbreviations][prefix], word)
+      {1, state} ->
+        {_, new_state} = pop_in(state[:abbreviations][prefix])
+        new_state
+      {_, state} ->
+        state
     end
   end
 end

@@ -30,6 +30,7 @@ defmodule Abbrev.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
+      {:credo, "~> 1.1", only: [:dev, :test], runtime: false},
       {:espec, "~> 1.7", only: :test},
       {:mix_test_watch, "~> 0.9.0", only: :dev, runtime: false}
     ]
