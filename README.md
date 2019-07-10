@@ -36,6 +36,14 @@ are especially welcome. Pull requests with specs, which have been run through
 
 Unit tests were written with [ESpec](https://github.com/antonmi/espec).
 
+## To Do
+
+See the [open issues on Github](https://github.com/CraigCottingham/abbrev/issues).
+
+## Acknowledgements
+
+`abbrev` was inspired by [the Ruby gem of the same name](http://ruby-doc.org/stdlib-2.6.3/libdoc/abbrev/rdoc/Abbrev.html).
+
 ## Copyright
 
 Copyright (c) 2019 Craig S. Cottingham, except where stated otherwise.
