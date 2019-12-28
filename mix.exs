@@ -40,7 +40,7 @@ defmodule Abbrev.MixProject do
       {:credo, "~> 1.1", only: [:dev, :test], runtime: false},
       {:espec, "~> 1.7", only: :test},
       {:ex_doc, "~> 0.19", only: :dev, runtime: false},
-      {:mix_test_watch, "~> 0.9.0", only: :dev, runtime: false}
+      {:mix_test_watch, "~> 1.0.2", only: :dev, runtime: false}
     ]
   end
 
